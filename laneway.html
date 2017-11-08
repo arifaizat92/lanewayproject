@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Laneway Project</title>
+        <link style="css" rel="stylesheet" href="laneway.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+        
+      <div id="wrapper">  
+          <!--Header containing logo and about section-->
+        <header>
+            <ul>
+                <li id="left"><p>The Laneway Project</p></li>
+                <li><a href="#"><p>About</p></a></li>
+                <li><a href=""><p>Explore</p></a></li>
+            </ul>
+            <div style="clear:both;"></div>
+        </header>
+        
+        <div id="map"></div>
+        </section>
+    
+    <!--This section contain the category of places and about us-->
+        <section>
+            <div class="col-11" id="explore"><h2>Explore Melbourne's Laneway</h2>
+            <ul>
+                <li id="restaurant"><a href="#"><div>Click Me!</div><p>Restaurant</p></a></li>
+                <li id="art"><a href="#"><div>Click Me!</div><p>Art</p></a></li>
+                <li id="cafe"><a href="#"><div>Click Me!</div><p>Cafe</p></a></li>
+                <li id="shopping"><a href="#"><div>Click Me!</div><p>Shopping</p></a></li>
+                <li id="other"><a href="#"><div>Click Me!</div><p>Other</p></a></li>
+            </ul>
+            <div style="clear:both;"></div>
+            </div>
+            
+            <div id ="about"><div class="col-11"><h2>About The Project?</h2>
+            <p>The Laneways Project is an initiative to highlight all the locations and activities at the infamous Melbourne laneways.</p></div></div>
+            
+            <article>
+                <div id ="news"><div class="col-11">
+                    <h2>Laneway News</h2>
+                    <p>Keep up to date on what's happening in Melbourne laneways</p>
+                    <ul>
+                        <li><div class ="article-pic" id="article1"></div><div class="content"><div class="col-10"><a href="#">10 Things To Do In Chinatown</a><p>Chinatown in Bourke Street has  been a major contributor to the  Melbourne multi-diversal identity.</p></div></div></li>
+                        
+                        <li><div class ="article-pic" id="article2"></div><div class="content"><div class="col-10"><a href="#">Laneways Ochestra</a><p>Walk to any laneways and you'll be feasted with the vibrant music performed by street artists from various cultural backgrounds.</p></div></div></li>
+                        
+                        <li><div class ="article-pic" id="article3"></div><div class="content"><div class="col-10"><a href="#">5 Best Laneway Cafes</a><p>The title "The City of Coffee" is not a just a statement, it's a manifestation </p></div></div></li>
+                    </ul>
+                </div></div>
+            </article>
+            
+        </section>
+        <footer>
+                <ul>
+                    <li id="aim"><p>The Laneway Project</p></li>
+                    <li id="resources"> <p style="line-height:2em;">RESOURCES</p>
+                    <a href="#"><p>Explore</p></a>
+                    <a href="#"><p>News</p></a></li>
+                    <li id="company"><p style="line-height:2em;">COMPANY</p>
+                    <a href="#"><p>About</p></a>
+                    <a href="#"><p>Contact us</p></a></li>
+                </ul>
+                <div style="clear:both;">
+            </div>
+        </footer>
+        <div id="second-footer">
+            <div class="col-11"><p>Copyright</p></div>
+        </div></div>
+        <script src="laneway.js"></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYXJpZmFpemF0OTIiLCJhIjoiY2l1Zjc2bTRpMDA2ZDNvcGdqaW5tYTJxeSJ9.5Fw7w7Hrl_lcUbytsjsatQ';
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/arifaizat92/civ8t788p000l2inp4xxs8nmi',
+            zoom: 15.2,
+            center: [144.963749,-37.814],
+            bearing: -20.00
+            });
+        
+            
+            //add control features to the map
+            var nav = new mapboxgl.NavigationControl({position: 'bottom-right'}); // position is optional
+            map.addControl(nav);
+            map.scrollZoom.disable();
+        </script>
+    </body>
+</html>

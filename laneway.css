@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+
+/**Grid System**/
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*for mobile phones*/
+
+[class*="col-"] {
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+
+
+@media only screen and (min-width: 768px) {.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+
+/**Basic styling**/
+
+html {
+    font-family:"Roboto", "Lucida Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h2, h3, p {
+    word-spacing: 0.05em;
+    line-height: 1.5em;
+    color: #565656;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2em
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+/** Navigation **/
+
+header {
+    background-color: #286DAB;
+    width: 100%;
+    top: 0;
+    left 0;
+    position: fixed;
+    z-index: 3;
+}
+
+header ul {
+    width: 91.66%;
+    margin: auto;
+    list-style-type: none;
+    
+}
+
+header li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: right;
+    margin-left: 2%;
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+#left {
+    margin-left: -2%;
+    float: left;
+}
+
+
+#map {
+    position: relative;
+    margin-top: 85px;
+    width: 100%;
+    height: 590px;
+    background-color: grey;
+   
+}
+
+
+/**Explore styling**/
+#explore {
+    clear: both;
+}
+
+#explore h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em
+}
+
+#explore ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+#explore li {
+    float: left;
+    margin: 16px;
+    height: 280px;
+}
+
+
+
+#explore li p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    transform: translate(-50%, -50%);
+}
+
+#restaurant {
+    width: 63.58%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)), url(Asset/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#restaurant div {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+}
+
+
+#art {
+    width: 30.33%;
+    margin-left:1%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)), url(Asset/art.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#art div {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+}
+
+#cafe {
+    width: 30.33%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)), url(Asset/cafe2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cafe div {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+}
+
+#shopping {
+    width: 30.33%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)), url(Asset/shopping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shopping div {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+}
+
+#other {
+    width: 30.33%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)), url(Asset/other.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#other div {
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+}
+
+/**About Styling**/
+
+#about {
+    background-color: #F2EEE2;
+    height: 235px;
+    text-align: center; 
+}
+
+
+/**News**/
+
+article h2, p{
+    text-align: center;
+}
+
+
+#news ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+#news li {
+    margin: auto;
+    float: left;
+    width: 30.33%;
+    margin: 16px;
+}
+
+.article-pic {
+    border-radius: 3px 3px 0 0;
+    height: 300px;
+}
+
+#article1 {
+    background-image: url(Asset/chinese.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#article2{
+    background-image: url(Asset/music.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article3{
+    background-image: url(Asset/eatery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    text-align: left;
+    padding-top: 30px;
+    height: 300px;
+    border-radius: 0 0 3px 3px;
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.content a {
+    font-size: 1.3em;
+    color: #565656;
+}
+
+.content a:hover {
+    color: black;
+}
+
+.content p {
+    color: #565656;
+    text-align: left;
+}
+
+/**Footer Styling**/
+footer {
+    clear: both;
+    color: white;
+    background-color: #286DAB;
+    
+}
+
+footer ul {
+    margin: auto;
+    padding: 15px;
+    width:91.66%;
+    list-style-type: none;
+}
+
+footer li {
+    float: right;
+}
+
+footer p {
+    color: white;
+    text-align: left;
+}
+
+
+#aim {
+    float: left;
+    width: 50%;
+}
+
+
+#resources  {
+    width: 25%;
+}
+
+
+
+#company {
+    width: 25%;
+}
+
+
+/**Second footer**/
+
+#second-footer {
+    clear: both;
+    background-color: #1c598e;
+}
+
+#second-footer p{
+    text-align: left;
+    color:white;
+}
+
+
+/**mobile screen styling**/
+@media only screen and (max-width:768px) {
+    
+    /*navigation*/
+    
+    header li {
+        padding-top: 0;
+        padding-bottom:0;
+        float: none;
+        text-align: center;
+        width: 91.66%;
+    }
+    
+    #left {
+        margin-left: 2%;
+    }
+    
+    #map {
+        margin-top: 135px;
+    }
+    
+    /*explore styling*/
+    
+    #explore li {
+        margin: auto;
+        float: none;
+        margin-bottom: 32px;
+    }
+    
+    #restaurant, #art, #cafe, #shopping, #other {
+        width: 91.66%;   
+    }
+    
+    
+    /*news styling*/
+    
+    #news li {
+    padding: 0;
+    margin: auto;
+    float: none;
+    width: 91.66%;
+    margin-bottom: 32px;
+        
+    }
+    
+    /*footer styling*/
+    
+
+    footer li, #aim { 
+        margin: auto;
+        float: none;
+    }
+    
+    
+    
+    footer p {
+        text-align: center;
+    }
+    
+    #second-footer p {
+        text-align: center;
+    }
+    
+    
+    
+    
+}
+
